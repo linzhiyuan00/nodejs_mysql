@@ -37,6 +37,7 @@ function repool(){    // 断线重连机制
     connectionLimit:100,      // 连接数限制
     queueLimit:0              // 最大连接等待数 （0为不限制）
   });  // 创建连接池
+  console.log('数据库连接成功')
   pool.on('error',err =>{
     err.code === "PROTOCOL_CONNECTION_LOST" && setTimeout(repool,2000)
   })

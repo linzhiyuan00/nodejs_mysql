@@ -19,7 +19,7 @@ app.use('/select',select);
 
 
 app.listen(8090,() =>{
-  console.log("服务启动滴滴滴：");
+  console.log("node服务启动！请求地址：","http://localhost:8090");
 })
 
 // json   返回json格式
