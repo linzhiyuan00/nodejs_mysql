@@ -33,7 +33,6 @@ router.get('/all', (req, res) => {
         conn.release();   //  释放连接池
       });
     }
-
   })
 })
 

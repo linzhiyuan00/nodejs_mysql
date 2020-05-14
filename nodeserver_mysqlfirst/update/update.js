@@ -61,10 +61,6 @@ router.post('/update', (req, res) => {
         conn.release();   //  释放连接池
       });
     }
-
-
   })
 })
-
-
 module.exports = router;
